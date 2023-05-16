@@ -10,6 +10,14 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html', // 打包后模板的名称
