@@ -36,6 +36,10 @@ module.exports = {
       filename: 'index.html', // 打包后模板的名称
       template: './src/index.html'  // 模板地址
     }),
+    new HtmlWebpackPlugin({
+      filename: 'login.html',
+      template: './src/login.html',
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
