@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MineCssExtractPlugin = require('mini-css-extract-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -40,6 +42,13 @@ module.exports = {
           filename: 'images/[name].[hash:6][ext]' // 配置hash防止重名
         }
       }
+    ]
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new UglifyJsPlugin({ sourceMap: true}),
+      new CssMinimizerPlugin(),
     ]
   },
   plugins: [
