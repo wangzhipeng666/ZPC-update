@@ -393,7 +393,7 @@ eval("module.exports = __webpack_require__.p + \"images/20.d87caa.jpg\";\n\n//# 
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"bundle": 0
+/******/ 			"index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
