@@ -41,7 +41,14 @@ module.exports = {
         generator: {
           filename: 'images/[name].[hash:6][ext]' // 配置hash防止重名
         }
-      }
+      },
+      {
+        test: /\.ejs/,
+        loader: 'ejs-loader',
+        options: {
+          esModule: false,
+        },
+      },
     ]
   },
   optimization: {

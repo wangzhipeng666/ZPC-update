@@ -1,22 +1,101 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>登录</title>
-	<script defer src="js/login.js"></script><link href="css/login.css" rel="stylesheet"></head>
-	<body>
-		<!-------------------login-------------------------->
-		<div class="login">
-			<form action="#" method="post">
-				<h1><a href="index.html"><img src="img/temp/logo.png"></a></h1>
-				<p></p>
-				<div class="msg-warn hide"><b></b>公共场所不建议自动登录，以防账号丢失</div>
-				<p><input type="text" name="" value="" placeholder="昵称/邮箱/手机号"></p>
-				<p><input type="text" name="" value="" placeholder="密码"></p>
-				<p><input type="submit" name="" value="登  录"></p>
-				<p class="txt"><a class="" href="reg.html">免费注册</a><a href="forget.html">忘记密码？</a></p>
-			</form>
-		</div>
-		
-	</body>
-</html>
+<head><script defer src="js/login.js"></script><link href="css/login.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'ejs-loader' in '/Users/cmt/Desktop/ZPC-update'
+  ModuleNotFoundError: Module not found: Error: Can't resolve 'ejs-loader' in '/Users/cmt/Desktop/ZPC-update'
+      at /Users/cmt/Desktop/ZPC-update/node_modules/webpack/lib/Compilation.js:2017:28
+      at /Users/cmt/Desktop/ZPC-update/node_modules/webpack/lib/NormalModuleFactory.js:817:13
+      at eval (eval at create (/Users/cmt/Desktop/ZPC-update/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /Users/cmt/Desktop/ZPC-update/node_modules/webpack/lib/NormalModuleFactory.js:275:22
+      at eval (eval at create (/Users/cmt/Desktop/ZPC-update/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /Users/cmt/Desktop/ZPC-update/node_modules/webpack/lib/NormalModuleFactory.js:560:15
+      at /Users/cmt/Desktop/ZPC-update/node_modules/webpack/lib/NormalModuleFactory.js:118:11
+      at /Users/cmt/Desktop/ZPC-update/node_modules/webpack/lib/NormalModuleFactory.js:631:8
+      at /Users/cmt/Desktop/ZPC-update/node_modules/neo-async/async.js:2830:7
+      at done (/Users/cmt/Desktop/ZPC-update/node_modules/neo-async/async.js:2925:13)
+      at /Users/cmt/Desktop/ZPC-update/node_modules/webpack/lib/NormalModuleFactory.js:1059:23
+      at finishWithoutResolve (/Users/cmt/Desktop/ZPC-update/node_modules/enhanced-resolve/lib/Resolver.js:324:11)
+      at /Users/cmt/Desktop/ZPC-update/node_modules/enhanced-resolve/lib/Resolver.js:398:15
+      at /Users/cmt/Desktop/ZPC-update/node_modules/enhanced-resolve/lib/Resolver.js:447:5
+      at eval (eval at create (/Users/cmt/Desktop/ZPC-update/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)
+      at /Users/cmt/Desktop/ZPC-update/node_modules/enhanced-resolve/lib/Resolver.js:447:5
+  
+  - Compilation.js:2017 
+    [ZPC-update]/[webpack]/lib/Compilation.js:2017:28
+  
+  - NormalModuleFactory.js:817 
+    [ZPC-update]/[webpack]/lib/NormalModuleFactory.js:817:13
+  
+  
+  - NormalModuleFactory.js:275 
+    [ZPC-update]/[webpack]/lib/NormalModuleFactory.js:275:22
+  
+  
+  - NormalModuleFactory.js:560 
+    [ZPC-update]/[webpack]/lib/NormalModuleFactory.js:560:15
+  
+  - NormalModuleFactory.js:118 
+    [ZPC-update]/[webpack]/lib/NormalModuleFactory.js:118:11
+  
+  - NormalModuleFactory.js:631 
+    [ZPC-update]/[webpack]/lib/NormalModuleFactory.js:631:8
+  
+  - async.js:2830 
+    [ZPC-update]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [ZPC-update]/[neo-async]/async.js:2925:13
+  
+  - NormalModuleFactory.js:1059 
+    [ZPC-update]/[webpack]/lib/NormalModuleFactory.js:1059:23
+  
+  - Resolver.js:324 finishWithoutResolve
+    [ZPC-update]/[enhanced-resolve]/lib/Resolver.js:324:11
+  
+  - Resolver.js:398 
+    [ZPC-update]/[enhanced-resolve]/lib/Resolver.js:398:15
+  
+  - Resolver.js:447 
+    [ZPC-update]/[enhanced-resolve]/lib/Resolver.js:447:5
+  
+  
+  - Resolver.js:447 
+    [ZPC-update]/[enhanced-resolve]/lib/Resolver.js:447:5
+  
+  - child-compiler.js:169 
+    [ZPC-update]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [ZPC-update]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [ZPC-update]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1199 
+    [ZPC-update]/[webpack]/lib/Compiler.js:1199:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [ZPC-update]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1195 
+    [ZPC-update]/[webpack]/lib/Compiler.js:1195:33
+  
+  - Compilation.js:2790 finalCallback
+    [ZPC-update]/[webpack]/lib/Compilation.js:2790:11
+  
+  - Compilation.js:3095 
+    [ZPC-update]/[webpack]/lib/Compilation.js:3095:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [ZPC-update]/[tapable]/lib/Hook.js:18:14
+  
+  - Compilation.js:3088 
+    [ZPC-update]/[webpack]/lib/Compilation.js:3088:38
+  
+  
+  - task_queues:96 processTicksAndRejections
+    node:internal/process/task_queues:96:5
+  
+</pre>
