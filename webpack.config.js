@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MineCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -42,13 +43,13 @@ module.exports = {
           filename: 'images/[name].[hash:6][ext]' // 配置hash防止重名
         }
       },
-      {
-        test: /\.ejs/,
-        loader: 'ejs-loader',
-        options: {
-          esModule: false,
-        },
-      },
+      // {
+      //   test: /\.ejs/,
+      //   loader: 'ejs-loader',
+      //   options: {
+      //     esModule: false,
+      //   },
+      // },
     ]
   },
   optimization: {
@@ -94,6 +95,7 @@ module.exports = {
     new MineCssExtractPlugin({
       filename: 'css/[name].css',
       chunkFilename: 'css/[name].chunk.css',
-    })
+    }),
+    new CleanWebpackPlugin(),
   ]
 }
