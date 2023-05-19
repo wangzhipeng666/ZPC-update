@@ -49,7 +49,19 @@ module.exports = {
     minimizer: [ // 覆盖默认压缩工具
       new UglifyJsPlugin({ sourceMap: true }),
       new CssMinimizerPlugin(),
-    ]
+    ],
+    splitChunks: {
+      minSize: 30 * 1024, // 包容量大于30kb时进行分割
+      chunks: 'all', // 将依赖和源码文件进行打包分割
+      name: 'common', // 重命名
+      cacheGroups: { // 主动分离第三方包
+        jquery: {
+          name: 'jquery',
+          test: /jquery\.js/,
+          chunks: 'all',
+        },
+      },
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
