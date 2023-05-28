@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --config build/webpack.config.js"
+    "start:vue": "webpack-dev-server --config build/webpack.vue.config.js",
+    "build": "webpack --config build/webpack.config.js",
+    "build:vue": "webpack --config build/webpack.vue.config.js"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +24,7 @@
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.7.14",
-    "webpack": "^5.82.1",
+    "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
