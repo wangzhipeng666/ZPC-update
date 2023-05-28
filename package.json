@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vue/compiler-sfc": "^3.3.4",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
@@ -19,12 +20,15 @@
     "mini-css-extract-plugin": "^2.7.5",
     "style-loader": "^3.3.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.7.14",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
     "flexslider": "^2.7.2",
-    "jquery": "^3.7.0"
+    "jquery": "^3.7.0",
+    "vue": "^3.3.4"
   }
 }
